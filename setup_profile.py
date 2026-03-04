@@ -1,4 +1,6 @@
-# Olá, eu sou o Lucas Montenegro 👋
+import os
+
+README = """# Olá, eu sou o Lucas Montenegro 👋
 
 ### Software Quality Assurance | Python Developer | Recife, BR 🇧🇷
 
@@ -43,3 +45,13 @@ Estudante apaixonado por qualidade de software, automação de testes e boas pr�
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-montenegro-689a5a3a4/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucasmontenegrodev)
+"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(README.strip())
+
+print("\n✅ README.md criado com sucesso!")
+print("\nAgora rode os comandos abaixo para subir no GitHub:\n")
+print("  git add .")
+print('  git commit -m "feat: adiciona README do perfil"')
+print("  git push\n")
