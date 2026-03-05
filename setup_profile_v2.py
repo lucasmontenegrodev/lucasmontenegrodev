@@ -1,4 +1,6 @@
-# Olá, eu sou o Lucas Montenegro 👋
+import os
+
+README = """# Olá, eu sou o Lucas Montenegro 👋
 
 ### Software Quality Assurance Engineer | Python & JavaScript | Recife, BR 🇧🇷
 
@@ -48,3 +50,13 @@ Estudante apaixonado por qualidade de software, automação de testes e boas pr�
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-montenegro-689a5a3a4/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucasmontenegrodev)
+"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(README.strip())
+
+print("\n✅ README.md atualizado com sucesso!")
+print("\nAgora rode:\n")
+print("  git add .")
+print('  git commit -m "feat: atualiza README com novos projetos e tecnologias"')
+print("  git push\n")
